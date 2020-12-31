@@ -1,0 +1,19 @@
+{
+  "name": "interview_server",
+  "version": "1.0.0",
+  "description": "Server of the interview app",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-w-bauman/interview.git"
+  },
+  "author": "Daniel Bauman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-w-bauman/interview/issues"
+  },
+  "homepage": "https://github.com/daniel-w-bauman/interview#readme"
+}
