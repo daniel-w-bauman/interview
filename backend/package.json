@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/daniel-w-bauman/interview/issues"
   },
-  "homepage": "https://github.com/daniel-w-bauman/interview#readme"
+  "homepage": "https://github.com/daniel-w-bauman/interview#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
