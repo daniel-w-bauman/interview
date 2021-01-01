@@ -1,0 +1,29 @@
+-token
+  -description: a code for interviewees take the test
+-interviewer
+  -username
+  -email
+  -password
+  -tests: [test, ...]
+  -interviews: [testRequest, ...]
+  -results: [testEntry, ...]
+  -description: a user who can generate tokens, make tests, and see test results
+-interviewee
+  -username
+  -email
+  -password
+  -interviews: [testRequest, ...]
+  -completed: [testEntry, ...]
+  -description: a user who can enter test tokens and answer tests
+-test: {question: [correct answer, incorrect answer, incorrect answer, incorrect answer], ...}
+-testEntry:
+  -username
+    -description: username of the user who (applied - if you're an interviewer, or created - if you're an interviewee)
+  -body: {question: picked_answer, ...}
+  -score: int (0-100)
+  -originalTest: {question: [correct answer, incorrect answer, incorrect answer, incorrect answer], ...}
+-testRequest
+  -test: {question: [correct answer, incorrect answer, incorrect answer, incorrect answer], ...}
+  -username:
+    -description: username of the user who created the test
+  -token
